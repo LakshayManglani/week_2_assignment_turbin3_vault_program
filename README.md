@@ -8,8 +8,9 @@ using Program Derived Addresses (PDAs) and System Program CPIs with PDA signing.
 
 ## Assignment Overview
 
-The assignment requirement:
-> **1. Write the vault program and include the withdraw and close instructions.**
+The assignment requirements:
+> **1. Write the vault program and include the withdraw and close instructions.**  
+> **2. Include a screenshot showing all tests passing.**
 
 - **`withdraw`**: Safely transfers SOL from the `vault` PDA back to the user
   via CPI with PDA signing (`[b"vault", user, &[bump]]`), verifying that the vault
@@ -62,6 +63,12 @@ cargo test
 ```
 
 *(or run `anchor test`)*
+
+### 3. Test Results
+
+Screenshot showing all tests passing:
+
+![All Tests Passing](screenshots/vault_program_test.png)
 
 ---
 
